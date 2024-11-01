@@ -12,7 +12,7 @@ function Crud() {
     <div>
       
     </div>
-  )
+  ) 
 }
 
 export default Crud
