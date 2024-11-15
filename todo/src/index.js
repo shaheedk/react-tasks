@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import DdRoute from "./Router/DdRoute";
 import Dorout from "./Router/Dorout";
-import {BrowserRouter as Router} from 'react-router-dom'
+import { BrowserRouter as Router } from "react-router-dom";
 // import MainApp from "./tasks/Router/MainApp";
 
 import reportWebVitals from "./reportWebVitals";
@@ -12,14 +12,13 @@ import Fireb from "./firebase/Fireb";
 // import App from "./App";
 // import TodoList from "./component/TodoList";
 
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
-    <Fireb/>
+      <Fireb />
 
-    {/* <TodoList/> */}
+      {/* <TodoList/> */}
     </Router>
   </React.StrictMode>
 );
