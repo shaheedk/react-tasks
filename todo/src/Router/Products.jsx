@@ -1,14 +1,12 @@
-import { Link ,Outlet} from "react-router-dom"
+import { Link, Outlet } from "react-router-dom";
 
 export default function Products() {
   return (
     <div>
-
-      <input type="search" placeholder='Search products' />
-      <Link to='/featured'>Featured</Link>
-      <Link to='/new' >New</Link>
-      <Outlet/>
+      <input type="search" placeholder="Search products" />
+      <Link to="/featured">Featured</Link>
+      <Link to="/new">New</Link>
+      <Outlet />
     </div>
-   
-  )
+  );
 }
