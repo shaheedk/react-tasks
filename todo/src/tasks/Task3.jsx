@@ -4,7 +4,7 @@ export default function Task3() {
   const [quotes, setQuots] = useState([]);
 
   useEffect(() => {
-    fetch("https://dummyjson.com/quotes")
+    fetch("https://dummyjson.com/quotes")  
       .then((response) => response.json())
       .then((data) => {
         setQuots(data.quotes.slice(0, 10));
