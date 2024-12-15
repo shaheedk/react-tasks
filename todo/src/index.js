@@ -8,6 +8,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import reportWebVitals from "./reportWebVitals";
 import Fireb from "./firebase/Fireb";
+import App from "./App";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import App from "./App";
 // import TodoList from "./component/TodoList";
@@ -16,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
-      <Fireb />
+      <App />
 
       {/* <TodoList/> */}
     </Router>

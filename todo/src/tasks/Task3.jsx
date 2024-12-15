@@ -7,7 +7,7 @@ export default function Task3() {
     fetch("https://dummyjson.com/quotes")  
       .then((response) => response.json())
       .then((data) => {
-        setQuots(data.quotes.slice(0, 10));
+        setQuots(data.quotes.slice(0,1));
       })
       .catch((error) => console.error("api failed ", error));
   }, []);

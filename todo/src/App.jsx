@@ -1,10 +1,11 @@
 import React from "react";
 import CouterOne from "./component/CouterOne";
+import Task3 from "./tasks/Task3";
 
 const App = () => {
   return (
     <div>
-      <CouterOne />
+      <Task3 />
     </div>
   );
 };
