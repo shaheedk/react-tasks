@@ -65,3 +65,11 @@
   border:1px solid black; */
 /* } */
 
+.dark{
+  color: red;
+  background-color: black;
+}
+.light{
+  color: black;
+  background-color: white;
+}

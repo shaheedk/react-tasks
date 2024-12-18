@@ -1,18 +1,17 @@
-import React from "react";
+import React, { useState } from 'react';
+import '../App.css';
 
-export default function Contitional() {
-  const [logged, setLogged] = React.useState(true);
-  if (logged) {
-    return (
-      <div>
-        <h1>Contitional Rendering</h1>
-      </div>
-    );
-  } else {
-    return (
-      <div>
-        <h1>Else Rendering</h1>
-      </div>
-    );
-  }
+function Conditional() {
+  const [login, setLogin] = useState(true);
+
+  return (
+    <div className={login ? 'dark' : 'light'}>
+      <button onClick={() => setLogin(!login)}>
+        {login ? 'Logout' : 'Login'}
+      </button>
+      <h1>{login ? 'Logged In' : 'Logged Out'}</h1>
+    </div>
+  );
 }
+
+export default Conditional;
