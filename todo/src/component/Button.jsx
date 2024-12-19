@@ -4,18 +4,25 @@
 import React from 'react'
 
 export default function Button() {
-    const samp=(eve)=>{
-    eve.preventDefault();
-        console.log("clicked",eve.target)
-      
-    }
+  const clickHandler = (evt, btnLabel) => {
+  evt.preventDefault()
+    console.log("I am being clicked", evt.target, btnLabel);
+  };
+
   return (
     <div>
-    <button onClick={samp}>first way</button>   {/*this is make a call back */} 
-    <button  onClick={(event)=>samp(event)}>second way</button>  
-   
-    <button onClick={samp.bind(this)}>third way</button>
-    <a href="#test" onClick={samp}>click this midalj bro</a>
+      {/* First Way: Passing the function directly */}
+      <button onClick={clickHandler}>Click Here 1</button>
+
+      {/* Second Way: Inline function with arguments */}
+      <button onClick={(event) => clickHandler(event, "btn 2")}>
+        Click Here 2
+      </button>
+
+      {/* Third Way: Using bind to pass arguments */}
+      <button onClick={clickHandler.bind(this, "btn 3")}>
+        Click Here 3
+      </button>
     </div>
-  )
+  );
 }
