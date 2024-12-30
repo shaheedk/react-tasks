@@ -11,6 +11,7 @@ export default function Task3() {
       })
       .catch((error) => console.error("api failed ", error));
   }, []);
+  
   return (
     <div>
       {quotes.map((quote) => (

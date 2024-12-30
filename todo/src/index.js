@@ -11,15 +11,15 @@ import Fireb from "./firebase/Fireb";
 import App from "./App";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import App from "./App";
-// import TodoList from "./component/TodoList";
+import TodoList from "./component/TodoList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
-      <App />
+      {/* <App /> */}
 
-      {/* <TodoList/> */}
+      <TodoList/>
     </Router>
   </React.StrictMode>
 );
